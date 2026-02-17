@@ -1,0 +1,510 @@
+{
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+    "server-memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres", "postgresql://localhost/mydb"]
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "<YOUR_TOKEN>"
+      }
+    },
+    "sqlite": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sqlite", "path/to/database.db"]
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"]
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": ["-y", "@langchain/mcp-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": "<YOUR_BRAVE_API_KEY>"
+      }
+    },
+    "gitlab": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-gitlab"],
+      "env": {
+        "GITLAB_PERSONAL_ACCESS_TOKEN": "<YOUR_TOKEN>",
+        "GITLAB_API_URL": "https://gitlab.com/api/v4"
+      }
+    },
+    "sentry": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sentry"],
+      "env": {
+        "SENTRY_AUTH_TOKEN": "<YOUR_TOKEN>",
+        "SENTRY_ORG_SLUG": "<YOUR_ORG>"
+      }
+    },
+    "redis": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-redis", "redis://localhost:6379"]
+    },
+    "alpaca": {
+      "command": "npx",
+      "args": ["-y", "@alpacahq/alpaca-mcp-server"],
+      "env": {
+        "ALPACA_API_KEY": "<YOUR_API_KEY>",
+        "ALPACA_API_SECRET": "<YOUR_API_SECRET>"
+      }
+    },
+    "astra-db": {
+      "command": "npx",
+      "args": ["-y", "@datastax/astra-db-mcp"],
+      "env": {
+        "ASTRA_DB_APPLICATION_TOKEN": "<YOUR_TOKEN>",
+        "ASTRA_DB_API_ENDPOINT": "<YOUR_ENDPOINT>"
+      }
+    },
+    "azure-devops": {
+      "command": "npx",
+      "args": ["-y", "@azure/mcp-server-azure-devops"],
+      "env": {
+        "AZURE_DEVOPS_PAT": "<YOUR_PAT>",
+        "AZURE_DEVOPS_ORG_URL": "<YOUR_ORG_URL>"
+      }
+    },
+    "azure": {
+      "command": "dotnet",
+      "args": ["run", "--project", "Azure.Mcp.Server"],
+      "env": {
+        "AZURE_SUBSCRIPTION_ID": "<YOUR_SUBSCRIPTION_ID>"
+      }
+    },
+    "canva": {
+      "command": "npx",
+      "args": ["-y", "@canva/mcp-server"],
+      "env": {
+        "CANVA_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "burp-suite": {
+      "command": "java",
+      "args": ["-jar", "burp-mcp-server.jar"],
+      "env": {
+        "BURP_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "browserbase": {
+      "command": "npx",
+      "args": ["-y", "@browserbase/mcp-server-browserbase"],
+      "env": {
+        "BROWSERBASE_API_KEY": "<YOUR_API_KEY>",
+        "BROWSERBASE_PROJECT_ID": "<YOUR_PROJECT_ID>"
+      }
+    },
+    "boostsecurity": {
+      "command": "npx",
+      "args": ["-y", "@boostsecurity/boost-mcp"]
+    },
+    "builtwith": {
+      "command": "npx",
+      "args": ["-y", "@builtwith/mcp"],
+      "env": {
+        "BUILTWITH_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "behavioral-prediction": {
+      "command": "npx",
+      "args": ["-y", "@chainaware/behavioral-prediction-mcp"],
+      "env": {
+        "CHAINAWARE_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["-y", "@chrome-devtools/mcp-server"]
+    },
+    "claude-context": {
+      "command": "npx",
+      "args": ["-y", "@zilliztech/claude-context"]
+    },
+    "coinex": {
+      "command": "npx",
+      "args": ["-y", "@coinex/coinex-mcp-server"],
+      "env": {
+        "COINEX_API_KEY": "<YOUR_API_KEY>",
+        "COINEX_API_SECRET": "<YOUR_API_SECRET>"
+      }
+    },
+    "coingecko": {
+      "command": "npx",
+      "args": ["-y", "@coingecko/coingecko-mcp-server"],
+      "env": {
+        "COINGECKO_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "databricks": {
+      "command": "npx",
+      "args": ["-y", "@databricks/mcp-server"],
+      "env": {
+        "DATABRICKS_HOST": "<YOUR_HOST>",
+        "DATABRICKS_TOKEN": "<YOUR_TOKEN>"
+      }
+    },
+    "e2b": {
+      "command": "npx",
+      "args": ["-y", "@e2b/mcp-server"],
+      "env": {
+        "E2B_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "firebase": {
+      "command": "npx",
+      "args": ["-y", "firebase-tools", "mcp"],
+      "env": {
+        "FIREBASE_TOKEN": "<YOUR_TOKEN>"
+      }
+    },
+    "firecrawl": {
+      "command": "npx",
+      "args": ["-y", "@firecrawl/mcp-server"],
+      "env": {
+        "FIRECRAWL_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "google-cloud-run": {
+      "command": "npx",
+      "args": ["-y", "@google-cloud/mcp-server-cloud-run"],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "<PATH_TO_CREDENTIALS_JSON>"
+      }
+    },
+    "grafana": {
+      "command": "npx",
+      "args": ["-y", "@grafana/mcp-server"],
+      "env": {
+        "GRAFANA_URL": "<YOUR_GRAFANA_URL>",
+        "GRAFANA_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "hive-intelligence": {
+      "command": "npx",
+      "args": ["-y", "@hive-intel/hive-crypto-mcp"]
+    },
+    "hugging-face": {
+      "command": "npx",
+      "args": ["-y", "@huggingface/mcp-server"],
+      "env": {
+        "HUGGINGFACE_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "ip2location": {
+      "command": "npx",
+      "args": ["-y", "@ip2location/mcp-server"],
+      "env": {
+        "IP2LOCATION_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "jenkins": {
+      "command": "java",
+      "args": ["-jar", "jenkins-mcp-server.jar"],
+      "env": {
+        "JENKINS_URL": "<YOUR_JENKINS_URL>",
+        "JENKINS_USER": "<YOUR_USER>",
+        "JENKINS_API_TOKEN": "<YOUR_API_TOKEN>"
+      }
+    },
+    "jetbrains": {
+      "command": "npx",
+      "args": ["-y", "@jetbrains/mcp-server"]
+    },
+    "jfrog": {
+      "command": "npx",
+      "args": ["-y", "@jfrog/mcp-server"],
+      "env": {
+        "JFROG_URL": "<YOUR_JFROG_URL>",
+        "JFROG_ACCESS_TOKEN": "<YOUR_ACCESS_TOKEN>"
+      }
+    },
+    "linear": {
+      "command": "npx",
+      "args": ["-y", "@linear/mcp-server"],
+      "env": {
+        "LINEAR_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "linkedin-mcp-runner": {
+      "command": "npx",
+      "args": ["-y", "@ertiqah/linkedin-mcp-runner"],
+      "env": {
+        "LINKEDIN_ACCESS_TOKEN": "<YOUR_ACCESS_TOKEN>"
+      }
+    },
+    "make": {
+      "command": "npx",
+      "args": ["-y", "@make/mcp-server"],
+      "env": {
+        "MAKE_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "mariadb": {
+      "command": "npx",
+      "args": ["-y", "@mariadb/mcp-server", "mariadb://localhost:3306/mydb"],
+      "env": {
+        "MARIADB_USER": "<YOUR_USER>",
+        "MARIADB_PASSWORD": "<YOUR_PASSWORD>"
+      }
+    },
+    "mcp-discovery": {
+      "command": "mcp-discovery",
+      "args": ["--help"]
+    },
+    "memgraph": {
+      "command": "npx",
+      "args": ["-y", "@memgraph/mcp-server"],
+      "env": {
+        "MEMGRAPH_HOST": "localhost",
+        "MEMGRAPH_PORT": "7687"
+      }
+    },
+    "microsoft-clarity": {
+      "command": "npx",
+      "args": ["-y", "@microsoft/clarity-mcp-server"],
+      "env": {
+        "CLARITY_PROJECT_ID": "<YOUR_PROJECT_ID>",
+        "CLARITY_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "microsoft-learn-docs": {
+      "command": "npx",
+      "args": ["-y", "@microsoft/learn-docs-mcp"]
+    },
+    "milvus": {
+      "command": "npx",
+      "args": ["-y", "@zilliztech/mcp-server-milvus"],
+      "env": {
+        "MILVUS_URI": "<YOUR_MILVUS_URI>",
+        "MILVUS_TOKEN": "<YOUR_TOKEN>"
+      }
+    },
+    "mongodb": {
+      "command": "npx",
+      "args": ["-y", "@mongodb-js/mongodb-mcp-server"],
+      "env": {
+        "MONGODB_URI": "mongodb://localhost:27017"
+      }
+    },
+    "neo4j": {
+      "command": "npx",
+      "args": ["-y", "@neo4j/mcp-server"],
+      "env": {
+        "NEO4J_URI": "bolt://localhost:7687",
+        "NEO4J_USER": "neo4j",
+        "NEO4J_PASSWORD": "<YOUR_PASSWORD>"
+      }
+    },
+    "neo4j-gds": {
+      "command": "npx",
+      "args": ["-y", "@neo4j/gds-mcp-server"],
+      "env": {
+        "NEO4J_URI": "bolt://localhost:7687",
+        "NEO4J_USER": "neo4j",
+        "NEO4J_PASSWORD": "<YOUR_PASSWORD>"
+      }
+    },
+    "neo4j-agent-memory": {
+      "command": "npx",
+      "args": ["-y", "@knowall/neo4j-agent-memory"],
+      "env": {
+        "NEO4J_URI": "bolt://localhost:7687",
+        "NEO4J_USER": "neo4j",
+        "NEO4J_PASSWORD": "<YOUR_PASSWORD>"
+      }
+    },
+    "neon": {
+      "command": "npx",
+      "args": ["-y", "@neondatabase/mcp-server"],
+      "env": {
+        "NEON_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "notion": {
+      "command": "npx",
+      "args": ["-y", "@notionhq/mcp-server"],
+      "env": {
+        "NOTION_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "oracle": {
+      "command": "sql",
+      "args": ["/nolog", "@mcp-server.sql"],
+      "env": {
+        "ORACLE_HOME": "<YOUR_ORACLE_HOME>"
+      }
+    },
+    "paddleocr": {
+      "command": "uvx",
+      "args": ["paddleocr-mcp-server"]
+    },
+    "parallel-task-mcp": {
+      "command": "npx",
+      "args": ["-y", "@parallel/task-mcp"],
+      "env": {
+        "PARALLEL_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "perplexity": {
+      "command": "npx",
+      "args": ["-y", "@perplexity/mcp-server"],
+      "env": {
+        "PERPLEXITY_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "persona-sessions": {
+      "command": "npx",
+      "args": ["-y", "@mattjoyce/persona-sessions-mcp"]
+    },
+    "pinecone": {
+      "command": "npx",
+      "args": ["-y", "@pinecone-database/mcp-server"],
+      "env": {
+        "PINECONE_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp-server"]
+    },
+    "polymarket": {
+      "command": "npx",
+      "args": ["-y", "@ozgureyilmaz/polymarket-mcp"]
+    },
+    "plugged-in": {
+      "command": "npx",
+      "args": ["-y", "@veritechnik/pluggedin-mcp"]
+    },
+    "postman-api": {
+      "command": "npx",
+      "args": ["-y", "@postman/postman-api-mcp"],
+      "env": {
+        "POSTMAN_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "pia": {
+      "command": "npx",
+      "args": ["-y", "@program-integrity-alliance/pia-mcp-local"]
+    },
+    "pulumi": {
+      "command": "npx",
+      "args": ["-y", "@pulumi/mcp-server"],
+      "env": {
+        "PULUMI_ACCESS_TOKEN": "<YOUR_ACCESS_TOKEN>"
+      }
+    },
+    "pure-md": {
+      "command": "npx",
+      "args": ["-y", "@puremd/puremd-mcp"],
+      "env": {
+        "PUREMD_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "qdrant": {
+      "command": "npx",
+      "args": ["-y", "@qdrant/mcp-server"],
+      "env": {
+        "QDRANT_URL": "http://localhost:6333",
+        "QDRANT_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "ramp": {
+      "command": "npx",
+      "args": ["-y", "@ramp/mcp-server"],
+      "env": {
+        "RAMP_CLIENT_ID": "<YOUR_CLIENT_ID>",
+        "RAMP_CLIENT_SECRET": "<YOUR_CLIENT_SECRET>"
+      }
+    },
+    "raygun": {
+      "command": "npx",
+      "args": ["-y", "@raygun/mcp-server"],
+      "env": {
+        "RAYGUN_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "redis-cloud-api": {
+      "command": "npx",
+      "args": ["-y", "@redis/mcp-redis-cloud"],
+      "env": {
+        "REDIS_CLOUD_API_KEY": "<YOUR_API_KEY>",
+        "REDIS_CLOUD_API_SECRET": "<YOUR_API_SECRET>"
+      }
+    },
+    "render": {
+      "command": "npx",
+      "args": ["-y", "@render/mcp-server"],
+      "env": {
+        "RENDER_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "sql-server": {
+      "command": "dotnet",
+      "args": ["run", "--project", "MssqlMcp"],
+      "env": {
+        "SQL_SERVER_CONNECTION_STRING": "<YOUR_CONNECTION_STRING>"
+      }
+    },
+    "stripe": {
+      "command": "npx",
+      "args": ["-y", "@stripe/agent-toolkit"],
+      "env": {
+        "STRIPE_API_KEY": "<YOUR_API_KEY>"
+      }
+    },
+    "supabase": {
+      "command": "npx",
+      "args": ["-y", "@supabase/mcp-server"],
+      "env": {
+        "SUPABASE_URL": "<YOUR_SUPABASE_URL>",
+        "SUPABASE_ANON_KEY": "<YOUR_ANON_KEY>"
+      }
+    },
+    "terraform": {
+      "command": "npx",
+      "args": ["-y", "@hashicorp/terraform-mcp-server"],
+      "env": {
+        "TF_CLOUD_TOKEN": "<YOUR_CLOUD_TOKEN>"
+      }
+    },
+    "upstash": {
+      "command": "npx",
+      "args": ["-y", "@upstash/mcp-server"],
+      "env": {
+        "UPSTASH_REDIS_REST_URL": "<YOUR_REST_URL>",
+        "UPSTASH_REDIS_REST_TOKEN": "<YOUR_REST_TOKEN>"
+      }
+    },
+    "vercel": {
+      "command": "npx",
+      "args": ["-y", "@vercel/mcp-server"],
+      "env": {
+        "VERCEL_ACCESS_TOKEN": "<YOUR_ACCESS_TOKEN>"
+      }
+    },
+    "zapier": {
+      "command": "npx",
+      "args": ["-y", "@zapier/mcp-server"],
+      "env": {
+        "ZAPIER_NLA_API_KEY": "<YOUR_NLA_API_KEY>"
+      }
+    }
+  }
+}
