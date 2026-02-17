@@ -9,7 +9,7 @@ The configuration file contains settings for the following MCP servers:
 ### Reference Servers
 - **Sequential Thinking** - Dynamic and reflective problem-solving through thought sequences
 - **Memory** - Knowledge graph-based persistent memory system
-- **Server Memory** - Alternative memory server implementation
+- **Server Memory** - Same as Memory (both use `@modelcontextprotocol/server-memory`; included for compatibility)
 
 ### Database Servers
 - **PostgreSQL** - Read-only database access with schema inspection
@@ -230,6 +230,7 @@ This configuration file is provided as-is. Refer to individual server repositori
 - Package names and installation methods may change over time
 - Always refer to the official documentation for the most up-to-date information
 - Some servers may require paid subscriptions or API access
+- **Note on Memory vs Server-Memory**: Both `memory` and `server-memory` in the configuration use the same package (`@modelcontextprotocol/server-memory`). They are included separately for compatibility with the problem statement requirements, but they provide identical functionality. You can remove one if desired.
 
 ---
 
